@@ -9,9 +9,9 @@
     tools:context=".activities.SplashActivity">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_icon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/icon"
         android:layout_centerInParent="true" />
 
 </RelativeLayout>

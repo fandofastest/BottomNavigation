@@ -220,13 +220,13 @@ public class MainActivity extends AppCompatActivity {
             song_progressbar.setMax(MusicUtils.MAX_PROGRESS);
             getlocalbroadcaster();
             navigation = (BottomNavigationView) findViewById(R.id.navigation);
-            navigation.setBackgroundColor(getResources().getColor(R.color.green_800));
+            navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
             navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.navigation_discover:
-                            navigation.setBackgroundColor(getResources().getColor(R.color.green_800));
+                            navigation.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                             loadFragment(new HomeFragment());
                             return true;
                         case R.id.navigation_search:
@@ -236,9 +236,9 @@ public class MainActivity extends AppCompatActivity {
                             Tools.setSystemBarLight(MainActivity.this);
                             return true;
                         case R.id.navigation_music:
-                            navigation.setBackgroundColor(getResources().getColor(R.color.pink_800));
+                            navigation.setBackgroundColor(getResources().getColor(R.color.green_700));
                             loadFragment(new PlaylistsFragment());
-                            Tools.setSystemBarColor(MainActivity.this, R.color.pink_800);
+                            Tools.setSystemBarColor(MainActivity.this, R.color.green_700);
                             Tools.setSystemBarLight(MainActivity.this);
                             return true;
                         case R.id.navigation_local:
